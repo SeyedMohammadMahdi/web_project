@@ -1,6 +1,6 @@
 
 body {
-    background-color: rgb(250, 250, 250);
+    background-color: rgb(252, 252, 252);
 }
 
 body * {
@@ -48,6 +48,7 @@ body * {
     text-transform: capitalize;
     padding: 10px 20px;
     cursor: pointer;
+    text-shadow: 5px 5px 5px rgb(184, 184, 184);
 }
 
 #nav a:first-child{
@@ -95,6 +96,8 @@ body * {
     
     margin-left: -60px;
     z-index: 10;
+    border-left: 1px solid rgb(192, 192, 192);
+
 }
 
 
@@ -136,3 +139,69 @@ body * {
     }
 }
 /* END OF HEADER AND NAVBAR */
+/* START OF main-body SECTION */
+
+#main-body {
+    width: 75%;
+    margin: auto;
+}
+
+#top-section {
+    display: flex;
+    padding-top: 50px;
+}
+
+#top-section>div {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+}
+
+#tag-section {
+    display: flex;
+    align-items: center;
+}
+
+#tag-section>*{
+    cursor: pointer;
+}
+
+
+#tag {
+    padding: 15px 50px 15px 20px;
+    background-color: #FDEBEB;
+    border-radius: 50px;
+    color: #F55556;
+    transition: box-shadow 0.1s;
+}
+
+#tag:hover {
+    box-shadow: 2px 2px 5px rgb(247, 206, 206);
+}
+
+#tag-section img {
+    margin-top: 20px;
+    margin-left: -65px;
+}
+
+#topic {
+    margin: 0;
+    font-size: 65px;
+    color: #2E2E2E;
+}
+
+#topic #red-text {
+    font-weight: 300;
+    color: #F54748;
+}
+
+#top-section p {
+    color: #676767;
+    font-size: 20px;
+    line-height: 30px;
+}
