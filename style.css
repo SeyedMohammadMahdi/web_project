@@ -1,0 +1,98 @@
+body * {
+    font-family: sans-serif;
+}
+
+#navbar {
+    /* background-color: red; */
+    /* height: fit-content; */
+    padding: 30px 0 10px 0;
+    box-shadow: 0 10px 5px rgb(238, 238, 238);
+    border-radius: 10px;
+}
+
+#navbar::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#navbar #logosection {
+    float: left;
+    height: 50px;
+    width: 33%;
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#nav {
+    float: right;
+    box-sizing: border-box;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42%;
+}
+
+#nav a {
+    color: rgb(44, 44, 44);
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#nav a:first-child{
+    color: rgb(224, 70, 70);
+}
+#search {
+    float: right;
+    width: 25%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#search * {
+    height: 40px;
+    box-sizing: content-box;
+    border: none;
+}
+
+#search input {
+    width: 60%;
+    border-right: 1px solid rgb(44, 44, 44);
+    border-bottom: 1px solid rgb(129, 129, 129);
+    outline: none;
+}
+/* #search input:focus {
+    ou
+} */
+#search button {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    cursor: pointer;
+}
+
+#search button:first-child {
+    border-bottom: 1px solid rgb(158, 158, 158);
+    border-radius: 0 0 0 10px;
+}
+
+#search button:last-child {
+    border-bottom: 1px solid rgb(145, 145, 145);
+    border-radius: 0 0 10px 0;
+}
+
+
+#search button img {
+    height: 30px;
+}
