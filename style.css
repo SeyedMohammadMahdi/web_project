@@ -420,6 +420,7 @@ body * {
     /* flex-wrap: wrap; */
     align-items: center;
     padding: 100px 0;
+    padding-bottom: 50px;
 }
 
 .content {
@@ -498,6 +499,7 @@ body * {
     margin: auto;
     align-items: center;
     padding: 100px 0;
+    padding-top: 50px;
 }
 
 #home-delivery .content {
@@ -505,7 +507,10 @@ body * {
     order: 1;
     padding-top: 100px;
 }
-
+#home-delivery .content-tag {
+    color: #F9BA45;
+    font-weight: 700;
+}
 #home-delivery .content .content-text {
     width: 50%;
 }
@@ -516,10 +521,10 @@ body * {
     text-align: center;
 }
 
-#home-delivery .img img {
+/* #home-delivery .img img {
     /* height: 80%;
     width: 80%; */
-}
+/* } */
 
 #home-delivery .content-button {
     color: #F86061;
@@ -577,6 +582,99 @@ body * {
 @media (max-width: 508px) {
     #home-delivery .content-header {
         font-size: 15px;
+        line-height: 15px;
+    }
+}
+
+#download-app {
+    width: 100%;
+    background-color: #FEF5F5;
+    padding: 100px 0;
+}
+
+#download-content {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+#download-app .content-tag {
+    color: #F54748;
+    font-weight: 700;
+}
+#download-content .img {
+    
+    /* width: 30%; */
+    text-align: right;
+    padding-right: 50px;
+}
+
+#download-content .img img {
+    width: 350px;
+    height: 700px;
+}
+
+#download-content .content{
+    /* width: calc(70% - 50px); */
+    width: 80% !important;
+    padding-left: 50px;
+}
+#dbuttons {
+    display: flex;
+    justify-content: space-;
+}
+#app-store {
+    border: none;
+    background-color: transparent;
+    /* margin-right: 50px; */
+}
+
+
+#play-store {
+    border: none;
+    background-color: transparent;
+}
+
+#dbutton img {
+    width: 200px;
+}
+
+
+@media (max-width: 1400px) {
+    #download-content {
+        flex-direction: column;
+    }
+
+    #download-content .img {
+        text-align: center;
+        padding-right: 0;
+    }
+
+    #download-app .content-header {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 710px) {
+    #download-app .content-header {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 612px) {
+    #download-content .content-header {
+        font-size: 25px;
+        line-height: 20px;
+    }
+
+    #dbuttons img {
+        width: 150px;
+    }
+}
+
+@media (max-width: 576px) {
+    #download-content .content-header {
+        font-size: 20px !important;
         line-height: 15px;
     }
 }
