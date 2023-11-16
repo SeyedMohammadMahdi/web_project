@@ -408,3 +408,84 @@ body * {
         font-weight: bolder;
     }
 }
+
+/* END OF SERVICE SECTION */
+
+/* START OF WHY CHOOSE US AND THE REST */
+
+#choose-us {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    padding: 100px 0;
+}
+
+.content {
+    width: 40%;
+    height: 100%;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.content-tag {
+    color: #03A66B;
+    font-size: 18px;
+}
+
+.content-header {
+    line-height: 25px;
+    font-size: 40px;
+    color: #2E2E2E;
+}
+
+.content-text {
+    color: #676767;
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+
+.content-button {
+    font-size: 20px;
+    padding: 25px 35px;
+    border: none;
+    background-color: #F86061;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.img {
+    width: 60%;
+    order: 1;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 1400px) {
+    #choose-us {
+        flex-direction: column;
+    }
+    .img {
+        margin-bottom: 50px;
+    }
+    .content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .img {
+        width: 100%;
+    }
+
+    .content-header {
+        font-size: 29px !important;
+    }
+}
