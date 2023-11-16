@@ -621,7 +621,11 @@ body * {
 }
 #dbuttons {
     display: flex;
-    justify-content: space-;
+    justify-content: space-evenly;
+}
+
+#dbuttons>* {
+    cursor: pointer;
 }
 #app-store {
     border: none;
@@ -676,5 +680,138 @@ body * {
     #download-content .content-header {
         font-size: 20px !important;
         line-height: 15px;
+    }
+    #dbuttons {
+        width: 100%;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    #dbuttons img {
+        width: 100%;
+    }
+}
+footer {
+    width: 100%;
+    padding: 50px 0 0;
+}
+#footer-top {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+#footer-logo {
+    width: 25%;
+}
+
+#footer-logo p {
+    color: #676767;
+}
+
+#footer-contents {
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+    margin-left: 15%;
+}
+#footer-contents > *{
+    flex-shrink: 0;
+    width: 33%;
+}
+
+#footer-contents h3 {
+    font-weight: 400;
+}
+
+#footer-contents ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#footer-contents ul li {
+    padding: 10px 0;
+}
+
+#footer-contents ul li a {
+    text-decoration: none;
+    color: #676767;
+}
+
+.footer-content p {
+    color: #676767;
+}
+
+@media (max-width:1050px) {
+    #footer-top {
+        flex-direction: column;
+    }
+
+    #footer-logo {
+        width: 50%;
+    }
+
+    #footer-contents {
+        width: 100%;
+    }
+
+    #footer-contents {
+        margin: 0;
+    }
+}
+
+
+@media (max-width: 576px) {
+    #footer-contents {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .footer-content {
+        text-align: center;
+        width: 70% !important;
+    }
+
+    #footer-logo p {
+        text-align: center;
+    }
+}
+
+#footer-bottom {
+    padding: 25px 0;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#rights {
+    color: #8C8C8C;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+#links a {
+    text-decoration: none;
+    color: #747474;
+    font-weight: 500;
+}
+
+#links a:first-child {
+    margin-right: 30px;
+}
+
+@media (max-width: 768px) {
+    #footer-bottom {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #rights {
+        margin-bottom: 15px;
     }
 }
